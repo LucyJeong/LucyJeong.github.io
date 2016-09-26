@@ -2,7 +2,6 @@
 <html>
 
   {% include head.html %}
-
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
@@ -27,7 +26,7 @@
         </div>
 
         <div class="executive-summary" itemprop="description">
-          <p>한 곳에 멈춰있지 않고, 여러 분야를 경험하며 끊임없이 그 안에서 화학작용이 일어나 새로운 창조물이 나오고 그 곳에 나만의 색을 녹여 나만의 것을 만든다. 나만이 할 수 있는 일, 그 가치를 믿어요.</p>
+          <p>한 곳에 멈춰있지 않고, 여러 분야를 경험하며 끊임없이 그 안에서 화학작용이 일어나 새로운 창조물이 나오고, 또 그 곳에 나만의 색을 녹여 나만의 것을 만든다 라는 문장으로 존재하고있는 루시입니다.</p>
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
@@ -44,7 +43,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Ability</h2>
+          <h2>Skills</h2>
         </header>
 
         <div class="resume-item">
@@ -57,42 +56,51 @@
 
         <div class="resume-item">
           <h4 class="resume-item-details">콘텐츠 제작</h4>
-          <p class="resume-item-copy">말하려는 의도를 담백하고 재미있게 전달하는 글</p>
-          <p class="resume-item-copy">논리적인 글</p>
-          <p class="resume-item-copy">비디오 촬영 및 편집</p>
-          <p class="resume-item-copy">카드뉴스 제작</p>
-          <p class="resume-item-copy">작은 단위의 심플한 웹툰 제작</p>
-          <p class="resume-item-copy">뉴스레터 제작</p>
+          <ul>
+            <li><p class="resume-item-copy">말하려는 의도를 담백하고 재미있게 전달하는 글</p></li>
+            <li><p class="resume-item-copy">논리적인 글</p></li>
+            <li><p class="resume-item-copy">비디오 촬영 및 편집</p></li>
+            <li><p class="resume-item-copy">카드뉴스 제작</p></li>
+            <li><p class="resume-item-copy">작은 단위의 심플한 웹툰 제작</p></li>
+            <li><p class="resume-item-copy">뉴스레터 제작</p></li>
+          </ul>
+        </div>
+
+        <div class="resume_item">
+          <h4 class="resume_item-details">개발</h4>
+          <ul>
+            <li><p class="resume_item-copy">워드프레스 웹사이트 제작 및 관리</p></li>
+            <li><p class="resume_item-copy">네이티브 iOS 앱 6</p></li>
+          </ul>
+        </div>
+
+        <div class="resume_item">
+          <h4 class="resume_item-details">디자인</h4>
+          <ul>
+            <li><p class="resume_item-copy">브랜드, 회사, 제품, 어플리케이션의 로고</p></li>
+          </ul>
+        </div>
+
+        <div class="resume_item">
+          <h4 class="resume_item-details">마케팅</h4>
+          <ul>
+            <li><p class="resume_item-copy">소셜미디어 운영</p></li>
+          </ul>
+        </div>
+
+        <div class="resume_item">
+          <h4 class="resume_item-details">콘텐츠 제작</h4>
+          <ul>
+            <li><p class="resume_item-copy">논리적인 글쓰기</p></li>
+            <li><p class="resume_item-copy">말하려는 의도를 담백하고 재미있게 전달하는 글</p></li>
+            <li><p class="resume_item-copy">카드뉴스 제작</p></li>
+            <li><p class="resume_item-copy">작은 단위의 심플한 웹툰 제작</p></li>
+            <li><p class="resume_item-copy">뉴스레터 제작</p></li>
+          </ul>
         </div>
 
         <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">번역</h3>
-          <h4 class="resume-item-details" itemprop="description">Safety Inspector &bull; Nov, 1980 &mdash; Present</h4>
-          <p class="resume-item-copy">Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points:</p>
-          <ul class="resume-item-list">
-            <li>프로그래밍 관련 강의나 문서, 글을 번역</li>
-            <li>화려한 수식어구가 아니라 의도를 잘 전달하는 수준 (한국어 -> 영어)</li>
-          </ul>
-          <p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p>
-
-        </div><!-- end of resume-item -->
-
-        <!-- another resume item -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">콘텐츠 제작</h3>
-          <h4 class="resume-item-details" itemprop="description">Windmill Crank Operator &bull; Jun, 1978 &mdash; Sept, 1979</h4>
-          <p class="resume-item-copy">If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.</p>
-          <ul class="resume-item-list">
-            <li>논리적인 글 쓰기</li>
-            <li>말하려는 의도를 담백하고 재미있게 전달하는 글</li>
-            <li>카드뉴스 제작</li>
-            <li>작은 단위의 심플한 웹툰 제작</li>
-            <li>뉴스레터 제작</li>
-          </ul>
-
-
-        </div><!-- end of resume-item -->
+        <!-- end of resume-item -->
 
         <!-- by now you're getting the picture... -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
@@ -107,7 +115,7 @@
       {% endif %}
 
       {% if site.resume_section_education %}
-      <!-- begin Education -->
+      <!-- begin Projects -->
       <section class="content-section">
 
         <header class="section-header">
@@ -124,22 +132,30 @@
             <li>반응: <a href="https://goo.gl/KRBu5S">나는 프로그래머다</a>, <a href="https://goo.gl/RCYbHf">인프런</a></li>
           </ul>
           <h4 class="resume-item-details" itemprop="description">워드프레스 개발 및 관리 &bull; 2016.8 &mdash; Present</h4>
+          <p class="resume-item-copy">한글링 홈페이지를 워드프레스로 개발 및 커스텀하였습니다. 원하는 기능들이 담긴 테마를 찾아 적용하고 일부분 커스터마이징하였습니다.</p>
            <ul>
              <li>프로세스: 프로세스: 원하는 핵심 기능 도출 - 알맞는 테마 서칭 - 도메인 및 호스팅 구매 - 워드프레스 설치 - 커스터마이징 - 최적화 - 테스트</li>
              <li>도메인 및 호스팅업체: <a href="https://kr.godaddy.com/">Godday</a></li>
              <li>파일소스 관리: Cpanel</li>
            </ul>
+           <h4 class="resume-item-details" itemprop="description">로고 디자인</h4>
+           <p class="resume-item-copy">한글링이 담고 있는 세종대왕의 훈민정음에 영감을 받아 한글링이 진행형(~ing) 멈춰있지 않고 굴러다니는 역동적인 이미지와 궁서체처럼 한중일 아시아 특유의 붓의 강약 조절 느낌을 살려 디자인하였습니다.</p>
+            <ul>
+              <li>사용한 툴: Photoshop, Illustrator</li>
+              <li>파일소스 관리: Cpanel</li>
+              <img src="https://pbs.twimg.com/profile_images/766942598015488000/sFtoRwRO_400x400.jpg" alt="hangling_logo" style="width:300;height:300;">
+            </ul>
         </div>
 
 
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
           <h3 class="resume-item-title" itemprop="name"><a href="https://goo.gl/fKJvYV">디지털노마드 인지발달론 e-book</a></h3>
           <h4 class="resume-item-details" itemprop="description">콘텐츠제작 &bull; 글 </h4>
-          <p class="resume-item-copy">맥북만 있으면 세계어디에서든지 일을 할 수 있는 디지털노마드로서 살아가면서 생기는 일들과 이러한 노마드들로 이루어진 스타트업 노마드씨 팀원들과 생기는 조금 특이하고도 재미있는 일상을 놓치치 않고 사유하고 기록한 책입니다.</p>
+          <p class="resume-item-copy">맥북만 있으면 세계어디에서든지 일을 할 수 있는 디지털노마드로서 살아가면서 생기는 일들과 이러한 노마드들로 이루어진 스타트업 노마드씨 팀원들과 생기는 조금 특이하고도 재미있는 일상을 놓치치 않고 사유하고 기록한 책입니다. <a href="https://goo.gl/JMm0Gd">브런치</a>에 있는 글들을 엮어 e-book으로 출간하였습니다.</p>
           <ul>
             <li>사용한 툴: sigil</li>
             <li>형식: 에세이</li>
-            <li>반응: <a href="https://goo.gl/S4ndZm">컴퓨터/IT분야 무료책 인기순위 상위권</a></li>
+            <li>반응: <a href="https://goo.gl/S4ndZm">컴퓨터/IT분야 무료책 인기순위</a></li>
           </ul>
         </div>
 
@@ -195,7 +211,7 @@
           <p class="resume-item-copy">디지털노마드로 이루어진 노마드씨 팀 자체를 홍보하는 채널로써, 디지털노마드의 핵심 노트북과 자신이 원하는 장소에 있는 시각적으로 멋진 사진을 리포스팅하여 올립니다.</p>
           <ul>
             <li>프로세스: 전략 - 분석 (경쟁사) - 테마를 정함 - 나만의 해쉬태그 - 멋진 사진을 제작 - 홍보 - 분석</li>
-            <li>나만의 해쉬태그: #노마드씨</li>
+            <li>나만의 해쉬태그: <a href="https://goo.gl/cAq1f5">#노마드씨</a></li>
             <li>타겟: 국내에 있는 디지털노마드</li>
             <li>사용한 분석툴: <a href="http://community.adbby.com/">애비</a></li>
             <li>결과: 전체 팔로워 298 전체 팔로잉 386 전체 좋아요 8.6k 댓글512</li>
@@ -203,27 +219,19 @@
         </div>
 
       </section>
-      <!-- end Education -->
+      <!-- end Projects -->
       {% endif %}
 
       {% if site.resume_section_projects %}
-      <!-- begin Projects -->
+      <!-- begin Work Process -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Price</h2>
+          <h2>Work Process</h2>
         </header>
 
         <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://donutlocator.io">donutfinder.io</a></h3>
-          <h4 class="resume-item-details">Founder & Primary Developer &bull; 2012 &mdash; Present</h4>
-          <p class="resume-item-copy">Donut Locator is an open source node/ember app that lets users find donuts within a defined radius from their home.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Donut Eater's User Group</h3>
-          <h4 class="resume-item-details">Co-Founder & Organizer &bull; 2007 &mdash; Present</h4>
-          <p class="resume-item-copy">DEUG is a local monthly meetup in Springfield where we share all the latest tips and tricks for dat donut lifestyle. I organize the group, and typically eat most of the donuts.</p>
+          <h4 class="resume-item-details">이메일을 통해 문의 - 확인후 연락 - 자세한 협의 - 계약 - 1차 50%계약금 - 제작 - 전달 - 피드백후 - 2차 50%계약금</h4>
         </div>
 
       </section>
@@ -235,99 +243,19 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Skills</h2>
+          <h2>Price</h2>
         </header>
 
-        <div class="resume-item">
-          <h4 class="resume-item-details">Donut design</h4>
-          <p class="resume-item-copy">Sprinkle art, icing design, eclair management, taste testing, donut/coffee pairing research</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Craft beer brewing</h4>
-          <p class="resume-item-copy">Hops inspection, brew testing, distribution management, bottle label design, festival and event management</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Family leadership</h4>
-          <p class="resume-item-copy">Bread winning, conflict resolution, couch inspection, TV longevity testing</p>
-        </div>
-
-      </section>
-      <!-- end Skills -->
-      {% endif %}
-
-      {% if site.resume_section_recognition %}
-      <!-- begin Recognition -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Recognition</h2>
-        </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details">Outstanding Achievement &bull; 2010</h4>
-          <p class="resume-item-copy">Awarded for stopping a nuclear meltdown, even though I also started it.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Duff Beer Customer of the year</h3>
-          <h4 class="resume-item-details">1997 &mdash; 2001, 2003, 2008 &mdash; 2012</h4>
-          <p class="resume-item-copy">Honored by <a href="https://en.wikipedia.org/wiki/Duff_Beer">Duff Beer</a> for being an outstanding customer several years straight. Qualifications included most beer consumed at a bar, most beer purchased, and most beer ralphed.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Moe's Patron of the Month</h3>
-          <h4 class="resume-item-details">12/2001, 8/2004</h4>
-          <p class="resume-item-copy">Specifically this prestigious awarded twice for stopping a robber with my belly.</p>
-        </div>
-
-      </section>
-      <!-- end Recognition -->
-      {% endif %}
-
-      {% if site.resume_section_associations %}
-      <!-- begin Associations -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Associations</h2>
-        </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://beerfortheworld.com">Beer for the World</a></h3>
-          <h4 class="resume-item-details">Volunteer &bull; 2008 &mdash; Present</h4>
-          <p class="resume-item-copy">Organized fund drives and participated in fundraising events for the benefit of families in third world countries without proper access to malt beverages.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Nuclear Workers Labor Union</h3>
-          <h4 class="resume-item-details">Member in Good Standin &bull; 1994 &mdash; Present</h4>
-          <p class="resume-item-copy">Founding member of the local nuclear workers labor union.</p>
-        </div>
-
-      </section>
-      <!-- end Associations -->
-      {% endif %}
-
-      {% if site.resume_section_links %}
-      <!-- begin Links -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Additional Links</h2>
-        </header>
-
-        <div class="resume-item">
-          <ul class="resume-item-list">
-            <li><a href="#">Springfield Poker Club</a></li>
-            <li><a href="#">Springfield Donut Eater's User Group</a></li>
+        <div class="resume-item-list">
+          <ul>
+            <li>주급: 40시간 80만원</li>
+            <li>최소일단위: 4시간 이상 (건당으로는 받지 않아요)</li>
+            <li>계약금은 1차 50%, 2차 50% 나눠서 전달</li>
           </ul>
         </div>
 
       </section>
-      <!-- end Links -->
+      <!-- end Skills -->
       {% endif %}
 
       <footer class="page-footer">
